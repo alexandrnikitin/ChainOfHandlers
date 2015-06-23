@@ -41,11 +41,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AzureReceiveMessageChain.cs" />
+    <Compile Include="IAzureReceiveMessageChain.cs" />
+    <Compile Include="IReceiveMessageHandler.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReceiveMessageContext.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ChainOfHandlers\ChainOfHandlers.csproj">
+      <Project>{E4972958-11B0-4948-8AF4-68F4AF96A81A}</Project>
+      <Name>ChainOfHandlers</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
