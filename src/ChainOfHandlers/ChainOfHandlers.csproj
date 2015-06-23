@@ -39,6 +39,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChainOfHandlers.cs" />
+    <Compile Include="ChainOfHandlersWithResponse.cs" />
+    <Compile Include="HandlingStrategies\AllHandlingStrategy.cs" />
+    <Compile Include="HandlingStrategies\ReturnManyStrategy.cs" />
+    <Compile Include="HandlingStrategies\ReturnNonNullStrategy.cs" />
+    <Compile Include="HandlingStrategies\ReturnWhenFalseStrategy.cs" />
+    <Compile Include="HandlingStrategies\ReturnWhenTrueStrategy.cs" />
+    <Compile Include="Interfaces\IHandler.cs" />
+    <Compile Include="Interfaces\IHandlingStrategy.cs" />
+    <Compile Include="Interfaces\IHandlingWithResponseStrategy.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
