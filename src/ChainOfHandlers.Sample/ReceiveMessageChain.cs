@@ -4,9 +4,9 @@ using ChainOfHandlers.Interfaces;
 
 namespace ChainOfHandlers.Sample
 {
-    internal class AzureReceiveMessageChain : ChainOfHandlers<ReceiveMessageContext, IReceiveMessageHandler>, IAzureReceiveMessageChain
+    internal class ReceiveMessageChain : ChainOfHandlers<ReceiveMessageContext, IReceiveMessageHandler>, IReceiveMessageChain
     {
-        public AzureReceiveMessageChain(
+        public ReceiveMessageChain(
             IHandlingStrategy<ReceiveMessageContext, IReceiveMessageHandler> handlingStrategy,
             IEnumerable<IReceiveMessageHandler> handlers)
             : base(handlingStrategy, handlers)

@@ -45,8 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AzureReceiveMessageChain.cs" />
-    <Compile Include="IAzureReceiveMessageChain.cs" />
+    <Compile Include="ReceiveMessageChain.cs" />
+    <Compile Include="MessageHandler1.cs" />
+    <Compile Include="MessageHandler2.cs" />
+    <Compile Include="IReceiveMessageChain.cs" />
+    <Compile Include="IDependency1.cs" />
+    <Compile Include="IDependency2.cs" />
     <Compile Include="IReceiveMessageHandler.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

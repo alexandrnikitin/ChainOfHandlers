@@ -1,6 +1,6 @@
 ﻿namespace ChainOfHandlers.Sample
 {
-    public interface IAzureReceiveMessageChain
+    public interface IReceiveMessageChain
     {
         void Receive(ReceiveMessageContext context);
     }
